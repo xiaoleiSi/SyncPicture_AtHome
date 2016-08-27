@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择图片"
+        android:id="@+id/btnSelectPic"
+        android:background="@drawable/shape_corners_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="onClickChoose"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索服务器"
+        android:id="@+id/btnSearchServer"
+        android:onClick="onClickSearchServer"
+        android:background="@drawable/shape_corners_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/btnSelectPic"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
